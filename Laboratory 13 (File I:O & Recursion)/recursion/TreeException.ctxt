@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=type
+comment0.target=TreeException(java.lang.String)
+comment0.text=\n\ constructor\n\ \n\ @param\ type\n\ \ \ \ \ \ the\ type\ of\ the\ exception\n
+comment1.params=
+comment1.target=java.lang.String\ getType()
+comment1.text=\n\ getter-method\ for\ the\ type\n\ \n\ @return\n\ \ \ \ \ \ the\ exception's\ type\n
+numComments=2

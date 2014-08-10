@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=double\ getThrust()
+comment0.text=\n\ This\ method\ returns\ the\ maximum\ thrust\ of\ the\ lander\ in\ ft/s^2\n
+comment1.params=
+comment1.target=double\ getGravity()
+comment1.text=\n\ This\ method\ returns\ the\ gravitational\ acceleration\ in\ ft/s^2\n
+comment2.params=
+comment2.target=double\ getInitialFuel()
+comment2.text=\n\ This\ method\ returns\ the\ amount\ of\ fuel\ that\ the\ lander\ starts\ with\n
+comment3.params=
+comment3.target=double\ getInitialVelocity()
+comment3.text=\n\ This\ method\ returns\ the\ initial\ velocity\ of\ the\ lander\ in\ ft/s^2\n
+comment4.params=
+comment4.target=java.lang.String\ getTitle()
+comment4.text=\n\ This\ method\ returns\ a\ string\ for\ the\ main\ window\ title\n
+comment5.params=
+comment5.target=java.lang.String\ getAuthor()
+comment5.text=\n\ This\ method\ returns\ the\ author's\ name\n
+comment6.params=title
+comment6.target=void\ setTitle(java.lang.String)
+comment6.text=\n\ This\ method\ sets\ the\ main\ window\ title\n\ \n\ @param\ title\ the\ new\ title\n
+comment7.params=acc
+comment7.target=void\ setGravity(double)
+comment7.text=\n\ This\ method\ sets\ the\ gravity\n\ \n\ @param\ acc\ the\ gravity\ acceleration\n
+numComments=8

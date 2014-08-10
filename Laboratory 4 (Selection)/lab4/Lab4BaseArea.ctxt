@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Lab4BaseArea()
+comment1.params=f
+comment1.target=void\ setFrame(Lab4Frame)
+comment2.params=s
+comment2.target=boolean\ isChecked(java.lang.String)
+comment3.params=
+comment3.target=boolean\ whistleMoreRecent()
+comment4.params=
+comment4.target=int\ totalNumChecked()
+comment5.params=
+comment5.target=void\ repaint()
+comment6.params=
+comment6.target=void\ init()
+comment7.params=p\ p2\ val
+comment7.target=void\ reflectX(java.awt.Polygon,\ java.awt.Polygon,\ int)
+comment8.params=p\ p2\ val
+comment8.target=void\ reflectY(java.awt.Polygon,\ java.awt.Polygon,\ int)
+comment9.params=x\ y
+comment9.target=void\ translateAll(int,\ int)
+numComments=10

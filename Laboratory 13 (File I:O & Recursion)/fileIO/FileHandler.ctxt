@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=FileHandler()
+comment0.text=\n\ FileHandler\ constructor\ -\ creates\ a\ new\ FileHandler\ object\n\n\ calling\ sequence\:\n\ \ \ fh\ \=\ new\ FileHandler();\n\n\ @return\ the\ new\ object\n\n\ side\ effects\:\n\ \ \ initializes\ the\ object\n\n\ bugs/anomalies\:\n\ \ \ none\ known\n\n
+comment1.params=
+comment1.target=java.lang.String\ getMessage()
+comment1.text=\n\ getMessage\ -\ gives\ the\ message\ that\ resulted\ from\ the\ most\ recent\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ file\ operation\n\n\ calling\ sequence\:\n\ \ \ str\ -\ fh.getMessage();\n\n\ @return\ The\ object's\ message.\n\n\ side\ effects\:\n\ \ \ none\n\n\ bugs/anomalies\:\n\ \ \ none\ known\n\n
+comment2.params=fileName
+comment2.target=void\ createEmptyFile(java.lang.String)
+comment2.text=\n\ createEmptyFile\ -\ creates\ a\ file\ with\ no\ bytes\ in\ it.\n\n\ calling\ sequence\:\n\ \ \ fh.createEmptyFile(outFileName);\n\n\ @param\ outFileName\ the\ name\ of\ the\ file\ to\ be\ created.\n\n\ side\ effects\:\n\ \ \ The\ object's\ message-string\ is\ changed\ to\ reflect\ the\ operation's\n\ \ \ status.\ \ If\ a\ file\ by\ that\ name\ already\ exists,\ it\ is\ deleted.\n\n\ bugs/anomalies\:\n\ \ \ not\ yet\ implemented\n\n
+comment3.params=fileName
+comment3.target=void\ deleteFile(java.lang.String)
+comment3.text=\n\ deleteFile\ -\ deletes\ a\ file\n\n\ calling\ sequence\:\n\ \ \ fh.deleteFile(outFileName);\n\n\ @param\ outFileName\ \ the\ name\ of\ the\ file\ to\ be\ deleted.\n\n\ side\ effects\:\n\ \ \ The\ object's\ message-string\ is\ changed\ to\ reflect\ the\ operation's\n\ \ \ status.\n\n\ bugs/anomalies\:\n\ \ \ not\ yet\ implemented\n\n
+comment4.params=fileName
+comment4.target=int\ countBytes(java.lang.String)
+comment4.text=\n\ countBytes\ -\ counts\ the\ number\ of\ bytes\ in\ a\ file\n\n\ calling\ sequence\:\n\ \ \ fh.countBytes(inFileName);\n\n\ @param\ inFileName\ \ the\ name\ of\ the\ file\ whose\ bytes\ are\ to\ be\ counted\n\n\ @return\ the\ number\ of\ bytes\ in\ the\ file,\ or\ -1\ if\ there\ was\ an\ error\n\ \ \ in\ opening\ and/or\ reading\ the\ file.\n\n\ side\ effects\:\n\ \ \ The\ object's\ message-string\ is\ changed\ to\ reflect\ the\ operation's\n\ \ \ status.\n\n\ bugs/anomalies\:\n\ \ \ not\ yet\ implemented\n\n
+comment5.params=fileName
+comment5.target=void\ listContents(java.lang.String)
+comment5.text=\n\ listContents\ -\ set's\ the\ object's\ message-string\ to\ character-contents\n\ \ \ \ \ \ \ \ \ \ \ \ \ of\ a\ file\n\n\ calling\ sequence\:\n\ \ \ fh.listContents(inFileName);\n\n\ @param\ inFileName\ a\ string\ that\ denotes\ the\ file\ whose\ contents\ are\ to\ be\n\ \ \ \ \ examined\n\n\ side\ effects\:\n\ \ \ The\ object's\ message-string\ is\ changed.\ \ If\ the\ file-read\ was\ successful,\n\ \ \ then\ the\ message\ consists\ of\ the\ file's\ contents.\ \ Otherwise\ it\ consists\n\ \ \ of\ a\ message\ that\ the\ file\ was\ not\ successfully\ read.\n\n\ bugs/anomalies\:\n\ \ \ not\ yet\ implemented\n\n
+comment6.params=srcName\ dstName
+comment6.target=void\ copyFile(java.lang.String,\ java.lang.String)
+comment6.text=\n\ copyFile\ -\ copies\ the\ contents\ of\ a\ file\ to\ a\ second\ file\n\n\ calling\ sequence\:\n\ \ \ fh.copyFile(inFileName,\ outFileName);\n\n\ @param\ inFileName\ a\ string\ that\ denotes\ the\ file\ whose\ contents\ are\ to\n\ \ \ \ \ be\ copied\n\ @param\ outFileName\ the\ file\ new\ file\ to\ be\ created\n\n\ side\ effects\:\n\ \ \ The\ file\ whose\ name\ is\ given\ by\ 'outFileName'\ is\ created;\ the\ contents\n\ \ \ of\ the\ 'inFileName'\ file\ are\ copied\ into\ it.\ \ The\ object's\ message-\n\ \ \ string\ is\ changed\ to\ reflect\ the\ status\ of\ the\ operation.\ \ If\ a\ file\n\ \ \ already\ exists\ by\ that\ name,\ it\ is\ deleted.\n\n\ bugs/anomalies\:\n\ \ \ not\ yet\ implemented\n\n
+comment7.params=fileName\ str
+comment7.target=void\ appendString(java.lang.String,\ java.lang.String)
+comment7.text=\n\ appendString\ -\ appends\ a\ UTF-format\ string\ to\ the\ end\ of\ a\ file\n\n\ calling\ sequence\:\n\ \ \ fh.appendString(outFileName,\ aString);\n\n\ @param\ outFileName\ the\ name\ of\ the\ file\ onto\ which\ the\ number\ should\n\ \ \ \ \ be\ appended\n\ @param\ aString\ the\ string\ to\ be\ appended.\n\n\ side\ effects\:\n\ \ \ The\ object's\ message-string\ is\ changed\ to\ reflect\ the\ operation's\n\ \ \ status.\ \ The\ file\ is\ modified\ by\ having\ some\ bytes\ appended\ to\ it.\n\n\ bugs/anomalies\:\n\ \ \ not\ yet\ implemented\n\n
+numComments=8

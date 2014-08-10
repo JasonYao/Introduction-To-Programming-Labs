@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=g
+comment0.target=void\ paint(java.awt.Graphics)
+comment0.text=\ the\ "paint"\ method,\ that\ specifies\ what\ to\ draw\ on\ the\ screen\r\n\r\n\ This\ method\ contains\ errors\!\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ main\r\n\r\n\ All\ Java\ programs\ start\ with\ a\ method\ named\ main.\ \ This\ class'\ main\r\n\ method\ creates\ the\ window\ to\ display\ the\ path\ in.\r\n\r\n\ IMPORTANT\:\ \ DO\ NOT\ MODIFY\ THIS\ METHOD\r\n
+numComments=2

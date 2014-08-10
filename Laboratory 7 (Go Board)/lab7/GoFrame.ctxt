@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ clearBoard()
+comment1.params=col\ row
+comment1.target=void\ pressedOnSpace(int,\ int)
+comment2.params=
+comment2.target=void\ randomizeBoard()
+comment3.params=
+comment3.target=void\ removeCapturedStones()
+comment4.params=row\ col
+comment4.target=boolean\ isValid(int,\ int)
+comment4.text=\n\ Helper\ method\:\ used\ to\ check\ that\ the\ row\ and\ column\ sent\ in\ is\ a\ valid\ place\ to\ check-\ if\ it\ is\ valid,\ returns\ true\n\ @param\ row\n\ @param\ col\n
+comment5.params=i\ j\ colour
+comment5.target=boolean\ checkSpace(int,\ int,\ int)
+comment5.text=\n\ Helper\ Method\:\ Checks\ the\ surrounding\ areas\ if\ there\ is\ an\ empty\ space,\ returns\ true\ if\ there\ is,\ returns\ false\ if\ no\n
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment0.text=\n\ main\n\n\ creates\ the\ window\ and\ displays\ it\ to\ the\ user\n
+comment1.params=
+comment1.target=FileFrame()
+comment1.text=\n\ FileFrame\ ctor\n\n\ constructs\ the\ GUI\ controls\ and\ arranges\ them\ in\ the\ window.\n
+comment2.params=we
+comment2.target=void\ windowClosing(java.awt.event.WindowEvent)
+comment2.text=\ Because\ FileFrame\ is\ a\ subclass\ of\ JFrame,\ it\ must\ implement\ the\n\ following\ event\ handler\ methods.\ \ However,\ we\ don't\ need\ to\ do\ anything\n\ special\ \ when\ these\ events\ occur\n
+comment3.params=we
+comment3.target=void\ windowClosed(java.awt.event.WindowEvent)
+comment4.params=we
+comment4.target=void\ windowOpened(java.awt.event.WindowEvent)
+comment5.params=we
+comment5.target=void\ windowIconified(java.awt.event.WindowEvent)
+comment6.params=we
+comment6.target=void\ windowDeiconified(java.awt.event.WindowEvent)
+comment7.params=we
+comment7.target=void\ windowActivated(java.awt.event.WindowEvent)
+comment8.params=we
+comment8.target=void\ windowDeactivated(java.awt.event.WindowEvent)
+comment9.params=ae
+comment9.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment9.text=\n\ actionPerformed\n\n\ responds\ to\ all\ button\ press\ events\ from\ the\ user\n
+numComments=10

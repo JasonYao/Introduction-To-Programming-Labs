@@ -1,0 +1,4 @@
+This is a file that contains ...
+
+    ... a couple lines of text.
+CS273 File I/O Laboratory

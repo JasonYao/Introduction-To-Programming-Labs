@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=x\ y
+comment0.target=EmbarassedFace(int,\ int)
+comment1.params=
+comment1.target=java.awt.Color\ headColor()
+comment2.params=
+comment2.target=java.awt.Color\ mouthColor()
+comment3.params=g
+comment3.target=void\ drawEyeWhites(java.awt.Graphics)
+numComments=4

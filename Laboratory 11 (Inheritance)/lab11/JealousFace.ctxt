@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=x\ y
+comment0.target=JealousFace(int,\ int)
+comment1.params=
+comment1.target=java.awt.Color\ eyeColor()
+comment2.params=g
+comment2.target=void\ drawHair(java.awt.Graphics)
+numComments=3

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=e
+comment0.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment1.params=
+comment1.target=JavaAPILabMain()
+comment2.params=frame
+comment2.target=void\ layout(javax.swing.JFrame)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=g
+comment0.target=void\ drawBoxes(java.awt.Graphics)
+comment0.text=\r\n\ drawBoxes\ -\ paints\ the\ image\ on\ the\ graphics\ window\r\n\r\n\ calling\ sequence\:\r\n\ \ \ drawBoxes(g);\ //\ called\ after\ certain\ mouse\ operations\r\n\r\n\ parameters\:\r\n\ \ \ g\ -\ a\ Graphics\ object\r\n\r\n\ side-effects\:\r\n\ \ \ Paints\ the\ appropriate\ number\ of\ boxes.\r\n\r\n\ anomalies\:\r\n\ \ \ Presently,\ only\ one\ box\ is\ drawn.\r\n\r\n
+numComments=1

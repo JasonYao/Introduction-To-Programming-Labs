@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=CheckerboardBase()
+comment1.params=g
+comment1.target=void\ drawCheckerboard(java.awt.Graphics)
+comment1.text=\r\n\ a\ helper\ method\ for\ paint()\ that\ draws\ the\ checkerboard.\ \ Students\r\n\ implement\ this\ so\ the\ functionality\ is\ isolated.\r\n
+comment2.params=g
+comment2.target=void\ paint(java.awt.Graphics)
+comment2.text=\r\n\ draws\ the\ window\ content\r\n
+comment3.params=e
+comment3.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment3.text=\r\n\ when\ the\ user\ presses\ a\ button,\ increment/decrement\ numSquares\r\n\ appropriately\r\n
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+comment4.text=\r\n\ create\ the\ window\ and\ display\ to\ user\r\n
+numComments=5

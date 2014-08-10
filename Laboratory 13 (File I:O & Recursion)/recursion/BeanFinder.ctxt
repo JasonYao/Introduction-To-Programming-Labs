@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=tree
+comment0.target=BeanFinder(Tree)
+comment0.text=\n\ constructor\n\ \n\ @param\ tree\n\ \ \ \ \ \ the\ tree\ object\ to\ search\n
+comment1.params=
+comment1.target=void\ traverse()
+comment1.text=\n\ traverses\ a\ tree,\ stopping\ at\ a\ jelly\ bean\ of,\ if\ not\ found,\ back\ at\ the\n\ starting\ location\n
+numComments=2

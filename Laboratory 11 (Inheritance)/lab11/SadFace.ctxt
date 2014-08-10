@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=w\ h
+comment0.target=SadFace(int,\ int)
+comment1.params=
+comment1.target=Polygon2\ createMouth()
+comment2.params=g
+comment2.target=void\ drawMouth(java.awt.Graphics)
+comment3.params=g
+comment3.target=void\ drawNose(java.awt.Graphics)
+numComments=4

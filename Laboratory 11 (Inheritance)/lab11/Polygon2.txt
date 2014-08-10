@@ -1,0 +1,210 @@
+////////////////////////////////////////////////////////
+// Polygon2.java - a Polygon that can be scaled and rotated
+//
+////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////
+// class Polygon2 - a Polygon that can be scaled and rotated
+//
+// This class is a subclass of the Polygon class in the Java library.  Its
+// representation is identical to Polygon, but a number of additional
+// operations are added:
+//   - Polygon2(aDouble) - constructor that creates a Polygon2 that approximates
+//                         a crescent in shape
+//   - Polygon2(aPolygon) - constructor that creates a Polygon2 object that is
+//                          a copy of a Polygon object
+//   - asPolygon() - creates a Polygon that is a copy of a Polygon2 object
+//   - scaleBy(aDouble) - scales a Polygon2 by a given amount
+//   - scaleBy(aDouble,anotherDouble) - scales a Polygon2 in the horizontal and
+//                                      vertical directions by respective amounts
+//   - fitIn(x,y,w,h) - scales/translates a Polygon2 so that it just fits in
+//                      inside a rectangle
+//   - rotateBy(someDegrees) - rotates the Polygon2 clockwise by a given number
+//                             of degrees
+// All of the above methods are non-destructive.  In other words, they leave
+// the original unchanged, and create a new object that is the changed version.
+//
+////////////////////////////////////////////////////////
+
+    ////////////////////////////////////////////////////////
+    // Polygon2 - constructor that creates a Polygon2 that is a copy of a
+    //            Polygon object
+    //
+    // calling sequence:
+    //   aPoly2 = new Polygon2(p);
+    //
+    // parameters:
+    //   p - the polygon to copy
+    //
+    // return-result:
+    //   a Polygon2 whose points are identical to those in 'p'
+    //
+    // side-effects:
+    //   the object is created and initialized
+    //
+    // bugs/anomalies:
+    //    none known
+    ////////////////////////////////////////////////////////
+    public Polygon2(Polygon p);
+
+    ////////////////////////////////////////////////////////
+    // Polygon2 - constructor that creates a Polygon that is an approximation
+    //            of a crescent-moon
+    //
+    // calling sequence:
+    //   aPoly2 = new Polygon2(crescentPercent);
+    //
+    // parameters:
+    //   crescentPercent - the percentage of the moon that should be showing
+    //     a percentage such as 1.0 or 2.0 will be just a sliver.  A percentage
+    //     of 50.0 will be a half-moon.  A percentage of 100.0 will yield a
+    //     Polygon2 that approximates a circle.  The crescent always starts
+    //     filling from the bottom of the screen so that, for example:
+    //       Polygon2 p = new Polygon2(5.0);
+    //       g.fillPolygon(p);
+    //     would draw something that approximates the letter 'C' on its back;
+    //
+    // return-result:
+    //   the new Polygon2
+    //
+    // side-effects:
+    //   creates/initializes the object
+    //
+    // bugs/anomalies:
+    //   The "open" part of the crescent is always "face up".  To get another
+    //   orientation, you need to apply the 'rotateBy' method.  Also, since
+    //   Polygon points are integer values, the point-locations in the poly
+    //   could be off by as much has half a pixel in each direction.
+    // 
+    ////////////////////////////////////////////////////////
+    public Polygon2(double crescentPercent);
+
+    ////////////////////////////////////////////////////////
+    // asPolygon - creates a (Java) Polygon from a Polygon2
+    //
+    // calling sequence:
+    //   aPoly = aPoly2.asPolygon();
+    //
+    // return-result:
+    //   a Polygon object whose points are identical to those in the Polygon2
+    //
+    // side-effects:
+    //   creates a new object; otherwise, none
+    //
+    // bugs/anomalies:
+    //   None known.
+    // 
+    ////////////////////////////////////////////////////////
+    public Polygon asPolygon();
+
+    ////////////////////////////////////////////////////////
+    // fitIn - creates a Polygon2 that is the same shape and orientation
+    //         as the original, but fits inside a given rectangle
+    //
+    // calling sequence:
+    //   aPoly2 = aPoly2b.fitIn(left, top, width, height);
+    //
+    // parameters:
+    //   left - the location of the left edge of the rectangle
+    //   top - the location of the top edge of the rectangle
+    //   width - the width of the rectangle
+    //   height - the height of the rectangle
+    //
+    // return-result:
+    //   a new Polygon2 object whose shape and orientation is the same as the
+    //   original, but that has been "squished" (or stretched) and moved so that
+    //
+    //   it fits snugly inside the rectangle given by the parameter coordinates.
+    //   The scaling may be different in the vertical and horizontal directions
+    //   so that, for example, and equilateral triangle may be transformed
+    //   into one that is not equilateral.
+    //
+    // side-effects:
+    //   creates a new object; otherwise, none
+    //
+    // bugs/anomalies:
+    //   Because Polygon2's have integer coordinates, some error may be
+    //   introduced due to rounding.
+    // 
+    ////////////////////////////////////////////////////////
+    public Polygon2 fitIn(int left, int top, int width, int height);
+
+    ////////////////////////////////////////////////////////
+    // scaleBy - creates a scaled copy of a Polygon2 object
+    //
+    // calling sequence:
+    //   aPoly2 = aPoly2b.scaleBy(scale);
+    //
+    //  parameters:
+    //    scale - the amount to scale the object by.  If greater than one,
+    //      the resulting object will be larger than the original; if less
+    //      than one, it will be smaller.
+    //
+    // return-result:
+    //   a new Polygon2 object that is scaled up or down, depending on the
+    //   scaling factor.  The center of the new object be in the same location
+    //   as the center of the original.
+    //
+    // side-effects:
+    //   creates a new object; otherwise, none
+    //
+    // bugs/anomalies:
+    //   Because Polygon2's have integer coordinates, some error may be
+    //   introduced due to rounding.
+    // 
+    ////////////////////////////////////////////////////////
+    public Polygon2 scaleBy(double scale);
+
+    ////////////////////////////////////////////////////////
+    // scaleBy - creates a scaled copy of a Polygon2 object, where the scaling
+    //           may be different in the horizontal and vertical dimensions
+    //
+    // calling sequence:
+    //   aPoly2 = aPoly2b.scaleBy(xScale, yScale);
+    //
+    //  parameters:
+    //    xScale - the horizontal scaling factor.  If greater than one,
+    //      the resulting object will be wider than the original; if less than
+    //      one, it will be narrower
+    //    yScale - the vertical scaling factor.  If greater than one,
+    //      the resulting object will be taller than the original; if less than
+    //      one, it will be shorter
+    //
+    // return-result:
+    //   a new Polygon2 object that is scaled up or down, depending on the
+    //   scaling factors.  The center of the new object be in the same location
+    //   as the center of the original.
+    //
+    // side-effects:
+    //   creates a new object; otherwise, none
+    //
+    // bugs/anomalies:
+    //   Because Polygon2's have integer coordinates, some error may be
+    //   introduced due to rounding.
+    // 
+    ////////////////////////////////////////////////////////
+    public Polygon2 scaleBy(double xScale, double yScale);
+
+    ////////////////////////////////////////////////////////
+    // rotateBy - creates a rotated copy of a Polygon2 object
+    //
+    // calling sequence:
+    //   aPoly2 = aPoly2b.rotateBy(degrees);
+    //
+    //  parameters:
+    //    degrees - the number of degree of clockwise rotation to apply
+    //
+    // return-result:
+    //   a new Polygon2 object that is rotated by the given amount.  The center
+    //   of the new object be in the same location as the center of the
+    //   original.  The size is unchanged.
+    //
+    // side-effects:
+    //   creates a new object; otherwise, none
+    //
+    // bugs/anomalies:
+    //   Because Polygon2's have integer coordinates, some error may be
+    //   introduced due to rounding.
+    // 
+    ////////////////////////////////////////////////////////
+    public Polygon2 rotateBy(double degrees);
